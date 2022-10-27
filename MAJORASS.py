@@ -12,13 +12,7 @@ import cufflinks as cf
 
 
 
-today = date.today()
 
-st.title("Stock price")
-
-d1 = st.date_input("start date",
-                   datetime.date(date.today))
-st.write("Start Date: ", d1)
 
 class Stock:
     def __init__(self, name, startDate, endDate):
