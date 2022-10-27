@@ -24,7 +24,7 @@ class Stock:
 
     def getData(self):
         stockData = yf.Ticker(self.name)
-        stockHist = stockData.history(period = '1d', start = self.startDate, end = self.endDate)
+        stockHist = stockData.history(period = '1d', start = self.start, end = self.end)
 
         st.write("Price changes")
         band = cf.QuantFig(stockHist, title = "Price figure", legend = "top", name = "Price range" )
@@ -45,5 +45,4 @@ d2 = st.date_input("end date", datetime.date(2019, 1, 1))
 st.write("End Date: ", d2)
 stockFetch = Stock(option,d1,d2)
 stockFetch.getData()
-
 
