@@ -30,7 +30,7 @@ class Stock:
         band = cf.QuantFig(stockHist, title = "Price figure", legend = "top", name = "Price range" )
         band.add_bollinger_bands()
         graph = band.iplot(asFigure = True)
-        st.ploty_chart(graph)
+        st.plotly_chart(graph)
 
 
 st.title("Stock price")
