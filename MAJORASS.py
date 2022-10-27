@@ -3,6 +3,5 @@ import pandas as pd
 import numpy as np
 
 st.title("Blac jack game")
-print("hello world")
-a = input("INPUT")
-print(a)
+PlayerName = st.text_input("Player Name", "Mc Damon")
+st.write("Player name is", PlayerName)
