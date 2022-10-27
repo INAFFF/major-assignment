@@ -38,10 +38,10 @@ option = st.selectbox(
     "Select the company price change you want to check out", ("AAPL", "NFLX", "NVDA","ADBE", "INTC", "MSFT", "GOOGL", "TSLA", "ORCL"))
     
 
-d1 = st.date_input("start date", datetime.date(2019, 1, 1))
+d1 = st.date_input("start date", datetime.date(2019, 1, 1), datetime.date(1900, 1, 1))
 st.write("Start Date: ", d1)
 
-d2 = st.date_input("end date", datetime.date(2020, 1, 1))
+d2 = st.date_input("end date", datetime.date(2020, 1, 1), datetime.date(2100, 12, 31))
 st.write("End Date: ", d2)
 stockFetch = Stock(option,d1,d2)
 stockFetch.getData()
