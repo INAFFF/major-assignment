@@ -13,7 +13,7 @@ import cufflinks as cf
 
 
 
-st.title("Stock price")
+
 
 
 class Stock:
