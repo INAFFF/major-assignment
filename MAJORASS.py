@@ -35,7 +35,7 @@ class Stock:
 
 st.title("Stock price")
 option = st.selectbox(
-    "Select the company price change you want to check out", ("APPL", "NFLX", "NVDA","ADBE", "INTC", "MSFT", "GOOGL", "TSLA", "ORCL"))
+    "Select the company price change you want to check out", ("AAPL", "NFLX", "NVDA","ADBE", "INTC", "MSFT", "GOOGL", "TSLA", "ORCL"))
     
 
 d1 = st.date_input("start date", datetime.date(2019, 1, 1))
