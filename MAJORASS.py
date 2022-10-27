@@ -23,7 +23,7 @@ class Stock:
         self.end = endDate
 
     def getData(self):
-        stockData = yf.Ticker(name)
+        stockData = yf.Ticker(self.name)
         stockHist = stockData.history(period = '1d', start = self.startDate, end = self.endDate)
 
         st.write("Price changes")
