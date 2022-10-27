@@ -42,7 +42,7 @@ d1 = st.date_input("start date", datetime.date(2019, 1, 1))
 st.write("Start Date: ", d1)
 
 d2 = st.date_input("end date", datetime.date(2019, 1, 1))
-st.wrtie("End Date: ", d2)
+st.write("End Date: ", d2)
 stockFetch = Stock(option,d1,d2)
 stockFetch.getData()
 
